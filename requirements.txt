@@ -1,0 +1,3 @@
+# FINAL working setup for WhisperX (2025)
+git+https://github.com/m-bain/whisperx.git
+
