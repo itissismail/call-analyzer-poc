@@ -1,3 +1,18 @@
-# FINAL working setup for WhisperX (2025)
-git+https://github.com/m-bain/whisperx.git
+# Core dependencies
+torch==2.5.1
+torchaudio==2.5.1
 
+# WhisperX and required libraries
+ctranslate2>=3.17
+transformers>=4.48.0
+faster-whisper>=1.1.1
+nltk
+onnxruntime
+pandas
+numpy
+
+# Diarization backend
+pyannote.audio>=3.3.2
+
+# WhisperX (latest from GitHub)
+git+https://github.com/m-bain/whisperx.git

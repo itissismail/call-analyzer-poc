@@ -4,6 +4,7 @@ import sys
 import torch
 from whisperx.diarize import DiarizationPipeline
 
+
 def transcribe(audio_path, output_path):
     print(f"Loading model and transcribing: {audio_path}")
 
@@ -26,6 +27,7 @@ def transcribe(audio_path, output_path):
         use_auth_token=None,  # or your Hugging Face token if needed
         device="cpu"          # or "cuda" if using NVIDIA GPU
     )
+    
     diarize_segments = diarize_model(audio_path)
 
     # Step 4: Assign speaker labels

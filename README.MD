@@ -45,14 +45,15 @@ cd ~/Projects/Test/call-analyzer-poc
 
 ### Set up Python virtual environment
 ```
-python3 -m venv .venv
+python3.10 -m venv .venv        # or python3.11
 source .venv/bin/activate
 ### Install dependencies
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+
 ```
 
 ```
-pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt
 ### Install FFmpeg (for audio processing)
 
 WhisperX integrates diarization via pyannote.audio.
